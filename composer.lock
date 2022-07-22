@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93e89bc89c3272d82712fa28e91e463a",
+    "content-hash": "e8880316d7fbd3d40bd29109c3d08664",
     "packages": [
         {
             "name": "brick/math",
@@ -5640,23 +5640,26 @@
         },
         {
             "name": "laravel/breeze",
-            "version": "v1.10.0",
+            "version": "v1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/breeze.git",
-                "reference": "e98e855ab4bde5bf0083c4a4d73c0f5b474241ae"
+                "reference": "416c0923860dcef96b977bd4d385c681f65e896a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/breeze/zipball/e98e855ab4bde5bf0083c4a4d73c0f5b474241ae",
-                "reference": "e98e855ab4bde5bf0083c4a4d73c0f5b474241ae",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/416c0923860dcef96b977bd4d385c681f65e896a",
+                "reference": "416c0923860dcef96b977bd4d385c681f65e896a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/filesystem": "^8.42|^9.0",
-                "illuminate/support": "^8.42|^9.0",
-                "illuminate/validation": "^8.42|^9.0",
-                "php": "^7.3|^8.0"
+                "illuminate/filesystem": "^9.0",
+                "illuminate/support": "^9.0",
+                "illuminate/validation": "^9.0",
+                "php": "^8.0.2"
+            },
+            "conflict": {
+                "laravel/framework": "<9.19.0"
             },
             "type": "library",
             "extra": {
@@ -5693,7 +5696,7 @@
                 "issues": "https://github.com/laravel/breeze/issues",
                 "source": "https://github.com/laravel/breeze"
             },
-            "time": "2022-06-28T11:52:06+00:00"
+            "time": "2022-07-19T14:03:23+00:00"
         },
         {
             "name": "laravel/sail",
