@@ -13,6 +13,7 @@ declare global {
         axios: AxiosStatic;
         Ziggy: any;
         _: LoDashStatic;
+        $page: any;
     }
     interface ImportMeta {
         glob: (pattern: string) => any;

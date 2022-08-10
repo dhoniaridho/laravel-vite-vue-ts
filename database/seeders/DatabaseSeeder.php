@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Admin\Setting;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -20,5 +21,13 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        Setting::create([
+            'app_name' => 'Laravel',
+            'app_description' => 'Admin',
+            'app_logo' => 'https://laravel.com/img/laravel-logo.png',
+            'app_favicon' => 'https://laravel.com/favicon.ico',
+            'app_email' => 'dhoniaridho@gmail.com',
+        ]);
     }
 }

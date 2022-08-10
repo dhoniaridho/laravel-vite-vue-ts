@@ -9,14 +9,23 @@
                     :collapsed-width="64"
                     :width="240"
                     :native-scrollbar="false"
-                    :inverted="inverted"
                     style="min-height: 100vh"
                 >
                     <div class="h-20 flex items-center">
-                        <ApplicationLogo class="w-10 mx-auto" />
+                        <div class="mx-auto max-w-10 flex items-center gap-3">
+                            <n-image
+                                class="mx-auto max-w-10"
+                                :width="40"
+                                :alt="page.app.name"
+                                :src="page.app.logo"
+                                lazy
+                            />
+                            <n-h6 strong>
+                                {{ page.app.name }}
+                            </n-h6>
+                        </div>
                     </div>
                     <n-menu
-                        :inverted="inverted"
                         :collapsed-width="64"
                         :collapsed-icon-size="22"
                         :options="menuOptions"
@@ -30,7 +39,7 @@
     </n-space>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { h, defineComponent, ref, Component } from "vue";
 import { NIcon } from "naive-ui";
 import {
@@ -39,10 +48,13 @@ import {
     WineOutline as WineIcon,
 } from "@vicons/ionicons5";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+import { usePage } from "@inertiajs/inertia-vue3";
 
 function renderIcon(icon: Component) {
     return () => h(NIcon, null, { default: () => h(icon) });
 }
+
+const page: any = usePage().props as any;
 
 const menuOptions = [
     {
@@ -118,14 +130,4 @@ const menuOptions = [
         ],
     },
 ];
-
-export default defineComponent({
-    setup() {
-        return {
-            inverted: ref(false),
-            menuOptions,
-        };
-    },
-    components: { ApplicationLogo },
-});
 </script>
