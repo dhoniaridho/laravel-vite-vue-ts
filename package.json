@@ -15,7 +15,7 @@
         "alpinejs": "^3.4.2",
         "autoprefixer": "^10.4.2",
         "axios": "^0.25",
-        "laravel-vite-plugin": "0.5.2",
+        "laravel-vite-plugin": "0.7.1",
         "lodash": "^4.17.21",
         "naive-ui": "^2.30.8",
         "postcss": "^8.4.6",
