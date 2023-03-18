@@ -12,7 +12,7 @@ specifiers:
   alpinejs: ^3.4.2
   autoprefixer: ^10.4.2
   axios: ^0.25
-  laravel-vite-plugin: 0.5.2
+  laravel-vite-plugin: 0.7.4
   lodash: ^4.17.21
   naive-ui: ^2.30.8
   postcss: ^8.4.6
@@ -40,11 +40,11 @@ devDependencies:
   alpinejs: 3.10.3
   autoprefixer: 10.4.8_postcss@8.4.16
   axios: 0.25.0
-  laravel-vite-plugin: 0.5.2_vite@3.0.5
+  laravel-vite-plugin: 0.7.4_vite@3.0.5
   lodash: 4.17.21
   naive-ui: 2.32.1_vue@3.2.37
   postcss: 8.4.16
-  tailwindcss: 3.1.8
+  tailwindcss: 3.1.8_postcss@8.4.16
   ts-loader: 9.3.1_typescript@4.7.4
   typescript: 4.7.4
   vite: 3.0.5
@@ -170,7 +170,7 @@ packages:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.1.8
+      tailwindcss: 3.1.8_postcss@8.4.16
     dev: true
 
   /@types/history/4.7.11:
@@ -882,14 +882,15 @@ packages:
     engines: {node: '>=0.12.0'}
     dev: true
 
-  /laravel-vite-plugin/0.5.2_vite@3.0.5:
-    resolution: {integrity: sha512-6ufssMvfF3IK/t1hRiYApTB6MHnpIAEZxte+V89aOt5T4CP8OVCPY5qvFBGwddW+yoVEOH5lnojSAD5YzM5T1w==}
+  /laravel-vite-plugin/0.7.4_vite@3.0.5:
+    resolution: {integrity: sha512-NlIuXbeuI+4NZzRpWNpGHRVTwuFWessvD7QoD+o2MlyAi7qyUS4J8r4/yTlu1dl9lxcR7iKoYUmHQqZDcrw2KA==}
     engines: {node: '>=14'}
     peerDependencies:
-      vite: ^3.0.0
+      vite: ^3.0.0 || ^4.0.0
     dependencies:
+      picocolors: 1.0.0
       vite: 3.0.5
-      vite-plugin-full-reload: 1.0.4_vite@3.0.5
+      vite-plugin-full-reload: 1.0.5_vite@3.0.5
     dev: true
 
   /lilconfig/2.0.6:
@@ -1202,10 +1203,12 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /tailwindcss/3.1.8:
+  /tailwindcss/3.1.8_postcss@8.4.16:
     resolution: {integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==}
     engines: {node: '>=12.13.0'}
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
@@ -1302,10 +1305,10 @@ packages:
     resolution: {integrity: sha512-nguyw8L6Un8eelg1vQ31vIU2ESxqid7EYmy8V+MDeMaHBqaRSkg3dTBToC1PR00D89UzS/SLkfYPnx0Wf23IQQ==}
     dev: false
 
-  /vite-plugin-full-reload/1.0.4_vite@3.0.5:
-    resolution: {integrity: sha512-9WejQII6zJ++m/YE173Zvl2jq4cqa404KNrVT+JDzDnqaGRq5UvOvA48fnsSWPIMXFV7S0dq5+sZqcSB+tKBgA==}
+  /vite-plugin-full-reload/1.0.5_vite@3.0.5:
+    resolution: {integrity: sha512-kVZFDFWr0DxiHn6MuDVTQf7gnWIdETGlZh0hvTiMXzRN80vgF4PKbONSq8U1d0WtHsKaFODTQgJeakLacoPZEQ==}
     peerDependencies:
-      vite: ^2 || ^3
+      vite: ^2 || ^3 || ^4
     dependencies:
       picocolors: 1.0.0
       picomatch: 2.3.1
