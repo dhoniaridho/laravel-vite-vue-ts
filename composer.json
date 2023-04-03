@@ -8,7 +8,7 @@
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "7.5.0",
         "inertiajs/inertia-laravel": "^0.5.4",
-        "laravel/framework": "9.26.1",
+        "laravel/framework": "9.52.5",
         "laravel/sanctum": "3.0.0",
         "laravel/tinker": "^2.7",
         "tightenco/ziggy": "^1.0"
